@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Laura Lunita</title>
+</head>
+<body onclick="PlayAudio()">
+    <div class="valentines-day-card">
+        <input id="open" type="checkbox">
+        <label class="open" for="open"></label>
+      <div class="card-front">
+        <div class="note">Para: Laura Luna</div>
+      </div>
+        
+        <div class="card-inside">
+          <div class="text-one">Quieres ser mi
+          </div>
+          <div class="heart"></div>
+          <div class="smile"></div>
+          <div class="eyes"></div>
+      </div>
+      </div>  
+      <audio id= "musicafondo" autoplay loop>
+        <source src="audio.mp3" type="audio/mp3">
+    </audio>
+    <script>
+
+        function PlayAudio(){
+            document.getElementById("musicafondo").play();
+        }
+    </script> 
+</body>
+</html>
